@@ -40,7 +40,7 @@
 			<header class="header">
 				<div class="header__content row">
 					<div class="header__logo">
-						<a class="logo" href=" {% url 'home'%}">
+						<a class="logo" href=" {% url 'app_blog:home'%}">
 							<img
 								src="{%static 'app_blog/images/logo.svg'%} "
 								alt="Homepage"
@@ -108,7 +108,7 @@
 
 						<ul class="header__nav">
 							<li class="current">
-								<a href="{%url 'home'%}" title="">Home</a>
+								<a href="{%url 'app_blog:home'%}" title="">Home</a>
 							</li>
 							<li class="has-children">
 								<a href="#0" title="">Categories</a>
@@ -127,9 +127,11 @@
 									<li><a href="single-standard.html">Standard Post</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url 'styles'%}" title="">Styles</a></li>
-							<li><a href="{% url 'about'%}" title="">About</a></li>
-							<li><a href="{% url 'contact'%}" title="">Contact</a></li>
+							<li><a href="{% url 'app_blog:styles'%}" title="">Styles</a></li>
+							<li><a href="{% url 'app_blog:about'%}" title="">About</a></li>
+							<li>
+								<a href="{% url 'app_blog:contact'%}" title="">Contact</a>
+							</li>
 						</ul>
 						<!-- end header__nav -->
 
